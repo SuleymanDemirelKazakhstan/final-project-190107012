@@ -67,3 +67,34 @@ h1, h2, h3, h4, h5, h6 {
 	text-decoration: none;
 	color: black;
 }
+
+/*FOOTER*/
+.footer {
+	width: 100%;
+	margin-top: auto;
+
+	/*position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;*/
+	z-index: 1000;
+	padding: 10px 80px;
+	background-color: lightpink;
+}
+.footer_in {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer_links {
+	display: flex;
+}
+.footer_link {
+	/*display: block;*/
+	/*vertical-align: top;*/
+	margin: 0 20px;
+
+	text-decoration: none;
+	color: black;
+}
+.footer_social {}
