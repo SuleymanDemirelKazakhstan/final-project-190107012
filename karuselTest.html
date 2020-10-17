@@ -1,0 +1,139 @@
+<style type="text/css">
+    #scroller_container {
+        margin: 0 auto;
+        width: 530px;
+        overflow: hidden;
+        line-height:0;
+        font-size:0;
+    }
+    #scroller_container div {
+        float: left;
+        vertical-align: baseline;
+    }
+    #scroller_container>div {
+        position: relative;
+        white-space: nowrap;
+        width: 100%;
+        padding: 22px 0;
+    }
+    #scroller_container>div a,
+    #scroller_container>div a img {
+        padding: 0;
+        margin:0;
+    }
+    #scroller_container>div a img {
+        margin: 0 1px;
+        border:0;
+    }
+</style>
+
+<script type="text/javascript">
+    var _scroller;
+    _scroller = function () { // scroller
+        return{
+            speed:10, /*скорость, чем больше значние, тем медленнее движение*/
+            direct:-1,/* -1 - движение влево, +1 - вправо*/
+            position:0,
+            t:null,
+            // Инициализация скроллера
+            init: function () {
+                var el;
+                // Установка обработчика колесика мыши
+                el = document.getElementById('scroller_container');
+                _scroller.addEvent(el, 'mousewheel', _scroller.wheel);
+                _scroller.addEvent(el, 'DOMMouseScroll', _scroller.wheel);
+
+                _scroller.timer(_scroller.direct); // запускаю скроллер
+            },
+
+            // Обработчик колесика мыши
+            wheel: function (e) {
+                _scroller.stop();
+                e = e ? e : window.event;
+                /*var wheelElem = e.target ? e.target : e.srcElement;*/
+                var wheelData = e.detail ? e.detail * -1 : e.wheelDelta / 40;
+
+                // В движке WebKit возвращается значение в 100 раз больше
+                if (Math.abs(wheelData) > 100) {
+                    wheelData = Math.round(wheelData / 100);
+                }
+                //_scroller.scroll(wheelData*10);
+                _scroller.direct=wheelData>0?1:-1;
+                _scroller.timer(_scroller.direct);
+                if (window.event) {
+                    e.cancelBubble = true;
+                    e.returnValue = false;
+                    e.cancel = true;
+                }
+                if (e.stopPropagation && e.preventDefault) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                }
+                return false;
+            },
+
+            // Функция скроллера
+            scroll: function (wheel) {
+                var el = document.getElementById('scroller_container').firstElementChild;
+                var o, oi, width;
+                _scroller.position += wheel;
+                if (wheel>0) {
+                    if (_scroller.position >= 0) { // берем последнюю картинку и вставляем ёё в начало
+                        // В этот момент можно подгружать более левую картинку и удалить последнюю
+                        o=el;//.firstElementChild; // контейнер с картинками
+                        oi=o.lastElementChild; // последняя картинка вместе с анкором
+                        width=oi.firstElementChild.clientWidth; // размер картинки
+                        o.insertBefore(oi,o.firstElementChild);
+                        _scroller.position-=width;
+                   }
+                }
+                else {
+                    o=el;//.firstElementChild; // контейнер с картинками
+                    oi=o.firstElementChild; // первая картинка вместе с анкором
+                    width=oi.firstElementChild.clientWidth; // размер картинки
+                    if(_scroller.position < -width){ // если картинка ушла влево из зоны видимости переношу её в конец списка
+                        // В этот момент можно подгружать следующую картинку и удалить первую
+                        o.appendChild(oi);
+                        _scroller.position+=width;
+                    }
+                }
+                el.style.left = _scroller.position + 'px';
+            },
+
+            // Таймер скроллера
+            timer: function (wheel) {
+                _scroller.stop();
+                _scroller.t = setInterval("_scroller.scroll(" + wheel + ");", _scroller.speed);
+            },
+
+            // Остановка скроллера
+            stop: function () {
+                if (_scroller.t != null) {
+                    clearInterval(_scroller.t);
+                    _scroller.t = null;
+                }
+            },
+
+            // назначить обработчик события
+            addEvent:function(el, evType, fn, useCapture) {
+                if (el.addEventListener) {
+                    el.addEventListener(evType, fn, useCapture);
+                }else if (el.attachEvent) {
+                    var r = el.attachEvent('on' + evType, fn);
+                }else el['on' + evType] = fn;
+             }
+        };
+    }();
+    window.onload=function(){setTimeout(_scroller.init,100);};
+</script>
+
+<div id="scroller_container" onmousemove="_scroller.stop();" onmouseout="_scroller.timer(_scroller.direct);">
+    <div>
+        <a href="#1" onclick="return!1"><img src="http://kdg.htmlweb.ru/photo/praga/b1.jpg" height="100" alt=""></a>
+        <a href="#2" onclick="return!1"><img src="http://kdg.htmlweb.ru/photo/praga/b2.jpg" height="100" alt=""></a>
+        <a href="#3" onclick="return!1"><img src="http://kdg.htmlweb.ru/photo/praga/b3.jpg" height="100" alt=""></a>
+        <a href="#4" onclick="return!1"><img src="http://kdg.htmlweb.ru/photo/praga/b4.jpg" height="100" alt=""></a>
+        <a href="#5" onclick="return!1"><img src="http://kdg.htmlweb.ru/photo/praga/b5.jpg" height="100" alt=""></a>
+        <a href="#6" onclick="return!1"><img src="http://kdg.htmlweb.ru/photo/praga/b6.jpg" height="100" alt=""></a>
+    </div>
+</div>
