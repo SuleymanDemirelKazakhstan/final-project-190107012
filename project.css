@@ -3,6 +3,7 @@ body {
 	line-height: 1.6;
 	font-size: 15px;
 	font-family: 'Vidaloka', serif;
+	color: #797a7e;
 
 	/*background-color: lightpink;*/
 }
@@ -26,45 +27,65 @@ h1, h2, h3, h4, h5, h6 {
 /*HEADER*/
 .header {
 	width: 100%;
+	/*height: 150px;*/
 
 	padding: 10px 80px;
-	background-color: lightpink;
+	background-color: #f7f2e7;
+
+	display: block;
 }
 .header_in {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.burger_menu_icon {
-	width: 40px;
-	height: 40px;
-}
 .header_logo {
 	font-size: 40px;
 	font-weight: bold;
 }
 .search /*input[type=text] */ {
-	width: 400px;
+	width: 300px;
 	height: 40px;
 	padding: 7px 20px;
 	border-radius: 5px;
 	font-family: 'Vidaloka', serif;
 }
 /*Nav*/ 
-.nav {}
+.nav {
+	/*display: flex;
+	justify-content: space-around;
+	align-items: center;*/
+}
 .nav_link {
 	display: inline-block;
 	/*vertical-align: top;*/
-	margin: 0 20px;
+	margin: 0 10px;
 
 	text-decoration: none;
-	color: black;
+	color: #797a7e;
 
 	transition: color 0.2s linear;
 }
 .nav_link:hover {
-	color: white;
+	color: #c7c2bc;
 	text-decoration: underline;
+}
+
+.header_bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header_bttm_link {
+	margin: 0 30px;
+	color: #797a7e;
+	text-transform: uppercase;
+	font-size: 14px;
+
+	transition: color 0.2s linear;
+}
+.header_bttm_link:hover {
+	color: #c7c2bc;
 }
 
 
@@ -72,34 +93,30 @@ h1, h2, h3, h4, h5, h6 {
 .section {
 	width: 100%;
 
-	padding: 10px 80px;
+	padding: 10px 0px;
 	/*background-color: pink;*/
+
+	/*background-size: 100%;*/
 }
 .section_in {
 	display: inline;
 	/*нужно между блоками пустые строки сделать*/
 }
-.side_menu {
-	width: 100px;
-	height: 100vh; /*KOGDA POYAVLYAETSYA SECTION MENWE STANOVITSA*/
-	background-color: red; /*KAK V YOUTUBE*/
-	display: none;
-}
-.slider_pics {
+.intro {
 	width: 100%;
-	height: 300px;
-	background-color: lightskyblue;
+	height: 80vh;
+	background-image: url('images/intro-back.jpg');
+	background-repeat: no-repeat;
+
+	font-size: 60px;
+	text-align: center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
-.recomendations {
-	width: 100%;
-	height: 200px;
-	background-color: gray;
-}
-.categories {
-	width: 100%;
-	height: 400px;
-	background-color: green;
-}
+
+.recomendations {}
+.categories {}
 
 /*FOOTER*/
 .footer {
@@ -108,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	z-index: 1000;
 	padding: 10px 80px;
-	background-color: lightpink;
+	background-color: #f7f2e7;
 }
 .footer_in {
 	display: block;
@@ -129,6 +146,6 @@ h1, h2, h3, h4, h5, h6 {
 .footer_link {
 	margin: 0 20px;
 	text-decoration: none;
-	color: black;
+	color: #797a7e;
 }
 .footer_social {/*icons*/}
