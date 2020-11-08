@@ -36,3 +36,5 @@
 
 
 const books_list = [{name:'The Picture of Dorian Gray', author:'Oscar Wilde', image_url:'images/books/dorian-gray.jpg', price: 12.99},{name:'Hamlet', author:'William Shakespeare', image_url:'images/books/hamlet.jpg', price:9.99}, {name:'Jane Eyre', author:'Charlotte Bronte', image_url:'images/books/jane-eyre.jpg', price:13.00}];
+
+const descs = [{name:'The Picture Of Dorian Gray', desc:''}, {name:'Hamlet', desc:''}, {name:'Jane Eyre', desc:''}]
