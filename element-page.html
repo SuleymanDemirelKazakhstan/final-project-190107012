@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
-	<title>BookShop/list page</title>
+	<!-- <title>BookShop/list page</title> -->
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="list-page.css">
 	<link rel="stylesheet" type="text/css" href="project.css">
@@ -9,6 +9,37 @@
 	<!-- <script src="" defer></script> -->
 </head>
 
+<style>
+	.section_inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 25px;
+	}
+	.element {
+		display: flex;
+		/*align-items: center;*/
+		justify-content: center;
+		width: 65%;
+
+		padding: 20px 100px;
+	}
+	.info {
+		display: block;
+		/*flex-direction: column;*/
+
+		padding: 10px 50px;
+	}
+	img {
+		width: 300px;
+		height: auto;
+	}
+	.ads {
+		width: 25%;
+		background-color: #f7f2e7; /*svetlyi*/
+		padding: 20px;
+	}
+
+</style>
 
 <body>
 	<div class="container">
@@ -34,46 +65,17 @@
 		</header>
 
 		<div class="section">
-			<div class="list_in">
-				<div class="products">
-					<a href="element-page.html" class="product">
-						<img src="images/books/dorian-gray.jpg" class="product_img">
-						book_name
-					</a>
-					<a href="element-page.html" class="product">
-						<img src="images/books/dorian-gray.jpg" class="product_img">
-						book_name
-					</a>
-					<a href="element-page.html" class="product">
-						<img src="images/books/dorian-gray.jpg" class="product_img">
-						book_name
-					</a>
-					<a href="element-page.html" class="product">
-						<img src="images/books/dorian-gray.jpg" class="product_img">
-						book_name
-					</a>
-					<a href="element-page.html" class="product">
-						<img src="images/books/dorian-gray.jpg" class="product_img">
-						book_name
-					</a>
-					<a href="element-page.html" class="product">
-						<img src="images/books/dorian-gray.jpg" class="product_img">
-						book_name
-					</a>
-					<a href="element-page.html" class="product">
-						<img src="images/books/dorian-gray.jpg" class="product_img">
-						book_name
-					</a>
-					<a href="element-page.html" class="product">
-						<img src="images/books/dorian-gray.jpg" class="product_img">
-						book_name
-					</a>
-					<a href="element-page.html" class="product">
-						<img src="images/books/dorian-gray.jpg" class="product_img">
-						book_name
-					</a>
-					
+			<div class="section_inner">
+				<div class="element">
+					<img src="images/books/dorian-gray.jpg">
+					<div class="info">
+						<h1 class="name">Book by Author</h1>
+						<h3 class="price">15$</h3>
+						<p class="description">This is a great book</p>
+					</div>
 				</div>
+
+				<div class="ads"></div>
 			</div>
 		</div>
 		
