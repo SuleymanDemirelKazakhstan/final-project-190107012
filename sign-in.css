@@ -1,0 +1,30 @@
+.sign_in {
+	width: 30%;
+	height: 70vh;
+	/*display: block;*/
+	display: flex;
+	flex-direction: column;
+
+	/*justify-content: center;*/
+	align-items: center;
+	margin: 0 auto;
+
+	border: 1px solid #797a7e;
+	border-radius: 5px;
+}
+
+input {
+	width: 250px;
+	height: auto;
+	/*border-radius: 3px;*/
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+/*.sign_in label {
+	display: flex;
+	align-items: flex-start;
+}*/
