@@ -1,0 +1,46 @@
+const books_list = [
+{name:'The Picture of Dorian Gray',
+author:'Oscar Wilde',
+image_url:'images/books/dorian-gray.jpg',
+price: 12.99},
+
+{name:'Hamlet',
+author:'William Shakespeare',
+image_url:'images/books/hamlet.jpg',
+price:9.99},
+
+{name:'Jane Eyre',
+author:'Charlotte Bronte',
+image_url:'images/books/jane-eyre.jpg',
+price:13.00},
+
+{name:'Frankeinstein',
+author:'Mary Shelley',
+image_url:'images/books/frankeinstein.jpg',
+price:13.00},
+
+{name:'The Hobbit',
+author:'J. R. R. Tolkien',
+image_url:'images/books/hobbit.jpg',
+price:13.00},
+
+{name:'Little Women',
+author:'Louisa May Alcott',
+image_url:'images/books/little-women.jpg',
+price:13.00},
+
+{name:'Romeo and Juliet',
+author:'William Shakespeare',
+image_url:'images/books/romeo&juliet.jpg',
+price:13.00},
+
+{name:'The Art of War',
+author:'Sun Tzu',
+image_url:'images/books/the-art-of-war.jpg',
+price:13.00},
+
+{name:'The Wizard of Oz',
+author:'L. Frank Baum',
+image_url:'images/books/wizardofOz.jpg',
+price:13.00}
+];

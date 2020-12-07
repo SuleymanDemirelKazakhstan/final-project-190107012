@@ -1,0 +1,32 @@
+[
+{name:'Crime and Punishment',
+author:'Fyodor Dostoyevsky',
+desc: 'Crime and Punishment focuses on the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who formulates a plan to kill an unscrupulous pawnbroker for her money. Before the killing, Raskolnikov believes that with the money he could liberate himself from poverty and go on to perform great deeds. However, once it is done he finds himself racked with confusion, paranoia, and disgust for what he has done. His justifications disintegrate completely as he struggles with guilt and horror and confronts the real-world consequences of his deed.',
+image_url:'images/2nd life books/crime&punishment.jpg',
+price: 12.99},
+
+{name:'Dead Poets Society',
+author:'Robin Williams',
+image_url:'images/2nd life books/dead-poets-society.jpg',
+price:9.99},
+
+{name:'The Divine Comedy',
+author:'Dante',
+image_url:'images/2nd life books/divine-comedy.jpg',
+price:13.00},
+
+{name:'To Kill a Mocking Bird',
+author:'Harper Lee',
+image_url:'images/2nd life books/mocking-bird.jpg',
+price:13.00},
+
+{name:'War and Peace',
+author:'Leo Tolstoy',
+image_url:'images/2nd life books/war&peace.jpg',
+price:13.00},
+
+{name:'Wuthering Heights',
+author:'Emily Bronte',
+image_url:'images/2nd life books/wuthering-heights.jpg',
+price:13.00},
+]
