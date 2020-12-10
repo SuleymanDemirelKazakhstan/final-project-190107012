@@ -1,0 +1,54 @@
+<style>
+	.list_in {
+		display: flex;
+	}
+	.products {
+		width: 100%;
+
+		padding: 10px 50px;
+		
+		display: flex;
+		flex-wrap: wrap;
+		
+		justify-content: flex-start;
+		/*align-items: center;*/
+		/*margin: 0px 0px;	*/
+	}
+	.product {
+		width: 20%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		margin: 30px;
+
+		/*text-decoration: none;*/
+		color: black;
+	}
+	.product_name {
+		/*font-size:20px;*/
+		text-transform: uppercase;
+	}
+	.product_price {}
+	.product_img {
+		width: 200px;
+		height: auto;
+	}
+</style>
+
+<div class="section">
+	<div class="list_in">
+		<div class="products">
+
+			{{#each item}}
+			<a href="/{{this.name}}" class="product">
+				<img src='{{this.image_url}}' class="product_img">
+				<span class="product_name">{{this.name}}</span>
+				<span class="product_price">{{this.price}}</span>
+			</a>
+			{{/each }}
+					
+		</div>
+	</div>
+</div>

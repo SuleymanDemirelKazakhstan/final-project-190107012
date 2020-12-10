@@ -1,46 +1,55 @@
 const books_list = [
 {name:'The Picture of Dorian Gray',
 author:'Oscar Wilde',
+desc: 'The Picture of Dorian Gray is a Gothic and philosophical novel by Oscar Wilde, first published complete in the July 1890 issue of Lippincott's Monthly Magazine.',
 image_url:'images/books/dorian-gray.jpg',
 price: 12.99},
 
 {name:'Hamlet',
 author:'William Shakespeare',
+desc: 'Hamlet is considered among the most powerful and influential works of world literature, with a story capable of "seemingly endless retelling and adaptation by others". It was one of Shakespeare's most popular works during his lifetime and still ranks among his most performed, topping the performance list of the Royal Shakespeare Company and its predecessors in Stratford-upon-Avon since 1879. It has inspired many other writers—from Johann Wolfgang von Goethe and Charles Dickens to James Joyce and Iris Murdoch—and has been described as "the world's most filmed story after Cinderella".',
 image_url:'images/books/hamlet.jpg',
 price:9.99},
 
 {name:'Jane Eyre',
 author:'Charlotte Bronte',
+desc: 'The novel revolutionised prose fiction by being the first to focus on its protagonist's moral and spiritual development through an intimate first-person narrative, where actions and events are coloured by a psychological intensity. Charlotte Brontë has been called the "first historian of the private consciousness", and the literary ancestor of writers like Proust and Joyce.',
 image_url:'images/books/jane-eyre.jpg',
 price:13.00},
 
-{name:'Frankeinstein',
+{name:'Frankenstein',
 author:'Mary Shelley',
-image_url:'images/books/frankeinstein.jpg',
-price:13.00},
+desc: 'Frankenstein; or, The Modern Prometheus is an 1818 novel written by English author Mary Shelley (1797–1851) that tells the story of Victor Frankenstein, a young scientist who creates a sapient creature in an unorthodox scientific experiment.',
+image_url:'images/books/frankenstein.jpg',
+price:12.50},
 
 {name:'The Hobbit',
 author:'J. R. R. Tolkien',
+desc: 'The Hobbit, or There and Back Again is a children's fantasy novel. The Hobbit is set within Tolkien's fictional universe and follows the quest of home-loving Bilbo Baggins, the titular hobbit, to win a share of the treasure guarded by Smaug the dragon. Bilbo's journey takes him from light-hearted, rural surroundings into more sinister territory.',
 image_url:'images/books/hobbit.jpg',
-price:13.00},
+price:15.00},
 
 {name:'Little Women',
 author:'Louisa May Alcott',
+desc: 'The story follows the lives of the four March sisters—Meg, Jo, Beth, and Amy—and details their passage from childhood to womanhood. It is loosely based on the lives of the author and her three sisters. Scholars classify it as an autobiographical or semi-autobiographical novel.',
 image_url:'images/books/little-women.jpg',
 price:13.00},
 
 {name:'Romeo and Juliet',
 author:'William Shakespeare',
+desc: 'Romeo and Juliet belongs to a tradition of tragic romances stretching back to antiquity. The plot is based on an Italian tale translated into verse as The Tragical History of Romeus and Juliet by Arthur Brooke in 1562 and retold in prose in Palace of Pleasure by William Painter in 1567. Shakespeare borrowed heavily from both but expanded the plot by developing a number of supporting characters, particularly Mercutio and Paris. Believed to have been written between 1591 and 1595, the play was first published in a quarto version in 1597.',
 image_url:'images/books/romeo&juliet.jpg',
 price:13.00},
 
 {name:'The Art of War',
 author:'Sun Tzu',
+desc: 'The book contained a detailed explanation and analysis of the Chinese military, from weapons and strategy to rank and discipline. Sun also stressed the importance of intelligence operatives and espionage to the war effort. Because Sun has long been considered to be one of history's finest military tacticians and analysts, his teachings and strategies formed the basis of advanced military training for millennia to come.',
 image_url:'images/books/the-art-of-war.jpg',
 price:13.00},
 
 {name:'The Wizard of Oz',
 author:'L. Frank Baum',
+desc: 'The story chronicles the adventures of a young farm girl named Dorothy in the magical Land of Oz, after she and her pet dog Toto are swept away from their Kansas home by a cyclone. The book is one of the best-known stories in American literature and has been widely translated. The Library of Congress has declared it "America's greatest and best-loved homegrown fairytale." Its groundbreaking success and the success of the Broadway musical adapted from the novel led Baum to write thirteen additional Oz books that serve as official sequels to the first story.',
 image_url:'images/books/wizardofOz.jpg',
-price:13.00}
+price:14.60}
 ];

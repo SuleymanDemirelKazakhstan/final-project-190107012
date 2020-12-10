@@ -7,26 +7,31 @@ price: 12.99},
 
 {name:'Dead Poets Society',
 author:'Robin Williams',
+desc: 'A novelization of the hit movie starring Robin Williams as Professor Keating, an inspiring, uplifting teacher who changes his students' lives.',
 image_url:'images/2nd life books/dead-poets-society.jpg',
 price:9.99},
 
 {name:'The Divine Comedy',
 author:'Dante',
+desc: 'The Divine Comedy is a long Italian narrative poem by Dante Alighieri, begun c. 1308 and completed in 1320, a year before his death in 1321. It is widely considered to be the pre-eminent work in Italian literature and one of the greatest works of world literature. The poem's imaginative vision of the afterlife is representative of the medieval world-view as it had developed in the Western Church by the 14th century. It helped establish the Tuscan language, in which it is written, as the standardized Italian language.',
 image_url:'images/2nd life books/divine-comedy.jpg',
 price:13.00},
 
 {name:'To Kill a Mocking Bird',
 author:'Harper Lee',
+desc: 'Instantly successful, widely read in high schools and middle schools in the United States, it has become a classic of modern American literature, winning the Pulitzer Prize. The plot and characters are loosely based on author's observations of her family, her neighbors and an event that occurred near her hometown of Monroeville, Alabama, in 1936, when she was ten.',
 image_url:'images/2nd life books/mocking-bird.jpg',
 price:13.00},
 
 {name:'War and Peace',
 author:'Leo Tolstoy',
+desc: 'The novel chronicles the French invasion of Russia and the impact of the Napoleonic era on Tsarist society through the stories of five Russian aristocratic families. Portions of an earlier version, titled The Year 1805, were serialized in The Russian Messenger from 1865 to 1867, then the novel was published in its entirety in 1869.',
 image_url:'images/2nd life books/war&peace.jpg',
 price:13.00},
 
 {name:'Wuthering Heights',
 author:'Emily Bronte',
+desc: 'Wuthering Heights is now a classic of English literature, contemporaneous reviews were deeply polarised; it was controversial because of its unusually stark depiction of mental and physical cruelty, and it challenged Victorian ideas about religion, morality, class and a woman's place in society.',
 image_url:'images/2nd life books/wuthering-heights.jpg',
 price:13.00},
 ]

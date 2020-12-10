@@ -4,11 +4,226 @@
 <head>
 	<title>BookShop</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="project.css">
+	<!-- <link rel="stylesheet" type="text/css" href="project.css"> -->
 	<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
 	<script src="script.js" defer></script>
 </head>
+<style>
+	body {
+	margin: 0;
+	line-height: 1.6;
+	font-size: 15px;
+	font-family: 'Vidaloka', serif;
+	color: #797a7e;
 
+	/*background-color: lightpink;*/
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+/*HEADER*/
+.header {
+	width: 100%;
+	/*height: 150px;*/
+
+	padding: 10px 80px;
+	background-color: #f7f2e7; /*svetlyi*/
+	/*background-color: #f4d9c6; */
+	/*background-color: #fbdcc4; */
+	/*background-color: #e8ded2;*/
+
+	display: block;
+}
+.header_in {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header_logo {
+	font-size: 40px;
+	font-weight: bold;
+}
+.search /*input[type=text] */ {
+	width: 300px;
+	height: 40px;
+	padding: 7px 20px;
+	border-radius: 5px;
+	font-family: 'Vidaloka', serif;
+}
+/*Nav*/ 
+.nav {
+	/*display: flex;
+	justify-content: space-around;
+	align-items: center;*/
+}
+.nav_link {
+	display: inline-block;
+	/*vertical-align: top;*/
+	margin: 0 10px;
+
+	text-decoration: none;
+	color: #797a7e;
+
+	transition: color 0.2s linear;
+}
+.nav_link:hover {
+	color: #c7c2bc;
+	text-decoration: underline;
+}
+
+.header_bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header_bttm_link {
+	margin: 0 30px;
+	color: #797a7e;
+	text-transform: uppercase;
+	font-size: 15px;
+
+	transition: color 0.2s linear;
+}
+.header_bttm_link:hover {
+	color: #c7c2bc;
+}
+
+
+/*SECTION*/
+.section {
+	width: 100%;
+
+	padding: 10px 0px;
+	/*background-color: pink;*/
+
+	/*background-size: 100%;*/
+}
+.section_in {
+	display: inline;
+	/*нужно между блоками пустые строки сделать*/
+}
+.section_main {}
+.intro {
+	width: 100%;
+	height: 80vh;
+	background-image: url('images/intro.jpg');
+	background-repeat: no-repeat;
+
+	/*margin: 50px auto;*/
+	font-size: 60px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+	/*color: #cc0000; bordovyi*/
+	/*color: #ff6666; nejno pink*/
+	/*color: #f58080; toje ottenok nejnopink*/
+	/*color: #cc6666; korichnevo pink*/
+	color: #564343; 
+	/*color: #ff3333;*/
+}
+
+.recomendations {}
+.categories {
+	margin: 50px 0px;
+}
+
+.cat_cards {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.cat_card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	/*text-decoration: none;*/
+	color: black;
+	font-size:20px;
+	text-transform: uppercase;
+}
+.cat_card_img {
+	width: 200px;
+	height: auto;
+}
+
+.secndLife {
+	margin: 60px auto 0;
+	display: flex;
+	justify-content: space-between;
+}
+.secndLifeDesc {
+	display: flex;
+	flex-direction: column;
+	padding: 80px;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+.secndLifeDescLinks {
+	margin: 40px auto;
+	display: flex;
+}
+.secndLifeDescLink {
+	color: #797a7e;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	margin: auto 20px;
+
+	border: 2px solid #797a7e;
+}
+.secndLifeImg {}
+
+/*FOOTER*/
+.footer {
+	width: 100%;
+	margin-top: auto;
+
+	z-index: 1000;
+	padding: 10px 80px;
+	background-color: #f7f2e7;
+}
+.footer_in {
+	display: block;
+	align-items: center;
+}
+.footer_up {
+	display: flex;
+	justify-content: space-between;
+}
+.footer_down {
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+}
+.footer_links {
+	display: flex;
+}
+.footer_link {
+	margin: 0 20px;
+	text-decoration: none;
+	color: #797a7e;
+}
+.footer_social {/*icons*/}
+</style>
 <body>
 	<div class="container">
 	
