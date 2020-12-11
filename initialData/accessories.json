@@ -1,0 +1,8 @@
+{name:'Black Shopper Bag', desc:'A shooper bag that \'shouts\' that You are booklover. Roomy bag for your books.', image_url:'images/accessories/bag-black.jpg', price:'4.50'}
+{name:'White Shopper Bag', desc:'A shooper bag that \'shouts\' that You are booklover. Roomy bag for your books.', image_url:'images/accessories/bag-white.jpg', price:'4.80'}
+{name:'Book Lamp', desc:'If You like reading in the night but you can not stand high lamp You will love this LED lamp that does not poke in the face or stand overhead.', image_url:'images/accessories/book-led', price:'5.30'}
+{name:'Spoonshape magnetic Bookmark', desc:'A magnetic bookmark in spoon shape with interesting text!', image_url:'images/accessories/bookmark-boysinbooks.jpg', price:'2.00'}
+{name:'Cactus magnetic Bookmark', desc:'A set of magnetic bookmarks with cactuses. Takes almost no space. Practical.', image_url:'images/accessories/bookmark-magnet.jpg', price:'2.00'}
+{name:'Totoro Bookmark', desc:'Great thing or present for a Totoro anime lover.', image_url:'images/accessories/bookmark-totoro.jpg', price:'1.80'}
+{name:'Harry Potter Bookmark', desc:'Harry Potter fans will appreciate this kind of bookmark.', image_url:'images/accessories/bookmark-harrypotter.jpg', price:'0.80'}
+{name:'Universe Cat Bookmark', desc:'A simple bookmark with gourgeous painting of a cat.', image_url:'images/accessories/bookmark-cat.jpg', price:'0.60'}

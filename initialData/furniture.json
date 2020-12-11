@@ -1,0 +1,7 @@
+{name:'Heartshape bookholder', desc:'Holder that keeps Your books stand. Also it is a great interior addition.', image_url:'images/furniture/bookholder-cupid.jpg', price:'7.20'}
+{name:'Hand bookholder', desc:'Holder that keeps Your book opened, so You can read book without holding it. Also it is a great interior addition.', image_url:'images/furniture/bookholder-hand.jpg', price:'10.00'}
+{name:'Bird bookholder', desc:'Holder that keeps Your books stand. Also it is a great interior addition.', image_url:'images/furniture/bookholder-seashell', price:'7.50'}
+{name:'Brown Stone shelf', desc:'A great piece of interior that also stores books.', image_url:'images/furniture/shelf-brownstone.jpg', price:'20.00'}
+{name:'Light wood shelf', desc:'A great piece of interior that also stores books.', image_url:'images/furniture/shelf-light.jpg', price:'17.50'}
+{name:'Brown wood shelf', desc:'A great piece of interior that also stores books.', image_url:images/furniture/shelf-lightbrown.jpg'', price:'17.50'}
+{name:'Reading chair', desc:'A chair where You can read drinking Your tea or coffee and store books in the shelfs by side.', image_url:'images/furniture/shelf-chair.jpg', price:'50.00'}

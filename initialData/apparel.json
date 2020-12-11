@@ -1,0 +1,6 @@
+{name:'Black hoodie', desc:'A hoodie with cute hedgehog on books.', image_url:'images/apparel/hoodie-black.jpg', price:'6.00'}
+{name:'Gray hoodie', desc:'A hoodie with picture of books.', image_url:'images/apparel/hoodie-gray.jpg', price:'5.80'}
+{name:'Gray shirt', desc:'Shirt that tells You are book Queen.', image_url:'images/apparel/shirt-gray.jpg', price:'4.85'}
+{name:'White sweatshirt', desc:'Great beautiful sweatshirt.', image_url:'images/apparel/sweatshirt-white.jpg', price:'5.90'}
+{name:'Socks with fun message', desc:'A pair of really fun socks. No one will disturb You while You are reading.', image_url:'images/apparel/socks-shh.jpg', price:'1.90'}
+{name:'Socks with names', desc:'Socks with names of famous writers and authors.', image_url:'images/apparel/socks-names.jpg', price:'2.00'}

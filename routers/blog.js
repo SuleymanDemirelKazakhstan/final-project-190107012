@@ -6,8 +6,8 @@ const router  = express.Router();
 const app = express();
 
 
-router.get('', (req, res) => {
-});
+// router.get('', (req, res) => {
+// });
 router.get('/', (req, res) => {
 });
 

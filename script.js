@@ -31,11 +31,16 @@ const mongoURL = 'mongodb://localhost:27017/finalprojectDB';
 
 const app = express();
 
-app.engine('handlebars', hbs.engine);
+app.engine('handlebars', /*hbs.engine*/ exphbs({runtimeOptions: {
+      allowProtoPropertiesByDefault: true,
+      allowProtoMethodsByDefault: true,
+    },
+}));
 app.set('view engine', 'handlebars');
 app.use(express.static('/images'));
 app.use(router.router);
-// app.use(express.static(__dirname+'/public'));
+
+app.use(express.static(__dirname+'/public'));
 
 /*var source = "<p>Hello, my name is {{name}}. I am from {{hometown}}. I have " +
              "{{kids.length}} kids:</p>" +
@@ -56,8 +61,62 @@ app.get('/', (req, res) => {
 			// db.close();
 });
 
+const book = require('./models/book')
+const secndLifeBook = require('./models/secndLifeBook')
+const accessories = require('./models/accessories')
+const apparel = require('./models/apparel')
+const furniture = require('./models/furniture')
+
 mongoose.connect(mongoURL, {useNewUrlParser: true, useUnifiedTopology: true}, (err, ok) => {
 	if (err) throw err;
+
+	app.get('/showData', (req, res) => {
+		book.find()
+		.then(appar =>{
+			res.json({
+				conf: 'success',
+				data: appar
+			})
+		})
+	})
+
+	app.get('/updateImgSrc', (req, res) => {
+		const query = req.query;
+		const bName = query.id;
+		delete query['id'];
+		book.findByIdAndUpdate(bName, query, {new:true})
+		.then(it => {
+			res.json({
+				conf: 'success',
+				data: it
+			})
+		})
+		.catch(err => {
+			res.json({
+				conf: 'fail',
+				message: err.message
+			})
+		})
+	})
+
+	app.get('/initialData', (req, res) => {
+		const query = req.query;
+
+		book.findByIdAndRemove(query.id)
+		.then(data => {
+			res.json({
+				conf: 'success',
+				data: query.id+"successfully removed"
+			})
+		})
+		.catch(err => {
+			res.json({
+				conf: 'fail',
+				message: err.message
+			})
+		})
+	})
+
 	app.listen(3000, () => console.log("LISTENING"));
 });
  

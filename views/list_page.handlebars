@@ -42,10 +42,10 @@
 		<div class="products">
 
 			{{#each item}}
-			<a href="/{{this.name}}" class="product">
+			<a href="/books/{{this.name}}" class="product">
 				<img src='{{this.image_url}}' class="product_img">
-				<span class="product_name">{{this.name}}</span>
-				<span class="product_price">{{this.price}}</span>
+				<span class="product_name"> {{this.name}} </span>
+				<span class="product_price"> $ {{this.price}} </span>
 			</a>
 			{{/each }}
 					

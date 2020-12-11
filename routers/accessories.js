@@ -5,10 +5,12 @@ const router  = express.Router();
 
 const app = express();
 
+// router.get('/', (req, res) => {
+	// res.render('list_page')
+// });
 
-router.get('', (req, res) => {
-});
-router.get('/', (req, res) => {
-});
+// router.get('/:name', (req, res) => {
+// 	res.render('element_page')
+// })
 
 module.exports = router;
