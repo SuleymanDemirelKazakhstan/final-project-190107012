@@ -1,0 +1,54 @@
+<style>
+	.section {
+	/*background-image: url("images/intro-back-1.jpg");*/
+	}
+
+	.create_acc {
+		width: 30%;
+		height: 70vh;
+		/*display: block;*/
+		display: flex;
+		flex-direction: column;
+
+		/*justify-content: center;*/
+		align-items: center;
+		margin: 0 auto;
+
+		border: 1px solid #797a7e;
+		border-radius: 5px;
+		/*background-color: white;*/
+	}
+
+	input {
+		width: 250px;
+		height: auto;
+		/*border-radius: 3px;*/
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+</style>
+
+<div class="section">
+	<div class="section_in">
+		<div class="create_acc">
+			<h1>Post an Add</h1>
+			<form action="/secndLifeBooks/post_ad" method="post">
+				<label for="name">Book name:</label>
+				<input type="text" name="name"/>
+				<label for="author">Book author:</label>
+				<input type="text" name="author"/>
+				<label for="desc">Book description:</label>
+				<textarea name="desc" value="" placeholder="Description" required>
+                </textarea>
+				<label for="price">Price:</label>
+				<input type="text" name="price"/>
+				<input type="submit" name="post" value="Post"/>
+			</form>
+			<br>	
+
+		</div>
+	</div>
+</div>

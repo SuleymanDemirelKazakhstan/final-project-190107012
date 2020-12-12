@@ -25,10 +25,20 @@
 
 		/*text-decoration: none;*/
 		color: black;
+
+		position: relative;
 	}
 	.product_name {
 		/*font-size:20px;*/
 		text-transform: uppercase;
+	}
+	.fav_img {
+		width: 40px;
+		height: 40px;
+
+		position: absolute;
+		top: 0px;
+		right: 25px;
 	}
 	.product_price {}
 	.product_img {
@@ -42,11 +52,14 @@
 		<div class="products">
 
 			{{#each item}}
-			<a href="/books/{{this.name}}" class="product">
+			<a href="/secndLifeBooks/{{this.name}}" class="product">
 				<img src='{{this.image_url}}' class="product_img">
 				<span class="product_name"> {{this.name}} </span>
 				<span class="product_price"> $ {{this.price}} </span>
+				<img src="images/fav.png" class="fav_img"/>
 			</a>
+			
+
 			{{/each }}
 					
 		</div>

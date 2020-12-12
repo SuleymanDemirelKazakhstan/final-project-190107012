@@ -1,0 +1,49 @@
+<style>
+	.sign_in {
+	width: 30%;
+	height: 70vh;
+	/*display: block;*/
+	display: flex;
+	flex-direction: column;
+
+	/*justify-content: center;*/
+	align-items: center;
+	margin: 0 auto;
+
+	border: 1px solid #797a7e;
+	border-radius: 5px;
+	}
+
+	input {
+		width: 250px;
+		height: auto;
+		/*border-radius: 3px;*/
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*.sign_in label {
+		display: flex;
+		align-items: flex-start;
+	}*/
+</style>
+
+<div class="section">
+	<div class="section_in">
+		<div class="sign_in">
+			<h1>Sign In</h1>
+			<form action="sign_in" method="post">
+				<label for="username">Username:</label>
+				<input type="Username" name="username"/>
+				<label for="password">Password:</label>
+				<input type="Password" name="password"/>
+				<button name="LogIn" value="Log In">Log In</button>
+			</form>
+			<br>
+			<a href="create_acc">Do not have an Account? Let's Create</a>
+		</div>
+	</div>
+</div>

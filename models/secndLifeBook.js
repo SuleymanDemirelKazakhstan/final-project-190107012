@@ -12,8 +12,13 @@ const bookSchema = mongoose.Schema({
 	desc: {
 		type: String
 	},
+	// img: {
+ //        data: Buffer,
+ //        contentType: String
+ //    },
 	image_url: {
 		type: String
+		// default: 'images/2nd life books/cover1.jpg'
 	},
 	price: {
 		type: Number,

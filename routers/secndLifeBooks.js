@@ -18,8 +18,42 @@ router.get('/', (req, res) => {
 	});
 });
 
-router.get('/:name', (req, res) => {
-	res.render('element_page')
+router.get('/post_ad', (req, res) => {
+	res.render('post_ad')
 })
+router.post('/post_ad', (req, res) => {
+	// var name = req.body.name;
+	// var author = req.body.author;
+	// var desc = req.body.desc;
+	// var img = req.body.img;
+	// var price = req.body.price;
+
+	// secndLifeBook.create({name: name, author: author, desc: desc, img: img, price: price})
+	// .then(it => {
+	// 	console.log(it);
+	// })
+	// .catch(err => {console.log(err.message)})
+
+	// res.redirect('/list_page', secndLifeBook)
+	console.log(req.body)
+	res.json({
+		conf: 'success',
+		data: req.body
+	})
+})
+
+router.get('/:name', (req, res) => {
+	let name = req.params.name;
+	// let bname = wname.substring(0, wname.length-10);
+	secndLifeBook.findOne({name: name})
+	.lean()
+	.then(it => {
+		// console.log(it);
+		// const item = {item: it}
+		// const item = {item: it}
+		console.log("BOOKNAME:"+name  + "IT: " + it);
+		res.render('element_page', it)
+	})
+});
 
 module.exports = router;

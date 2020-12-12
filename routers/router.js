@@ -7,6 +7,9 @@ const accessories = require('./accessories');
 const apparel = require('./apparel');
 const furniture = require('./furniture');
 const secndLifeBooks = require('./secndLifeBooks')
+const user = require('./user')
+
+router.use('/user', user)
 
 router.use('/blog', blog);
 router.use('/books', books);

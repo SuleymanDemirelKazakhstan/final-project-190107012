@@ -1,0 +1,50 @@
+<style>
+	.section {
+	/*background-image: url("images/intro-back-1.jpg");*/
+	}
+
+	.create_acc {
+		width: 30%;
+		height: 70vh;
+		/*display: block;*/
+		display: flex;
+		flex-direction: column;
+
+		/*justify-content: center;*/
+		align-items: center;
+		margin: 0 auto;
+
+		border: 1px solid #797a7e;
+		border-radius: 5px;
+		/*background-color: white;*/
+	}
+
+	input {
+		width: 250px;
+		height: auto;
+		/*border-radius: 3px;*/
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+</style>
+
+<div class="section">
+	<div class="section_in">
+		<div class="create_acc">
+			<h1>Create Account</h1>
+			<form action="create_acc" method="post">
+				<label for="emailOrPhone">Email or phone number:</label>
+				<input type="emailOrPhone" name="emailOrPhone"/>
+				<label for="username">Username:</label>
+				<input type="Username" name="username"/>
+				<label for="password">Password:</label>
+				<input type="Password" name="password"/>
+				<button name="" value="">Create</button>
+			</form>
+			<br>	
+		</div>
+	</div>
+</div>
