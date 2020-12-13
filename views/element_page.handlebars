@@ -8,7 +8,7 @@
 		display: flex;
 		/*align-items: center;*/
 		justify-content: center;
-		width: 65%;
+		width: 70%;
 
 		padding: 20px 100px;
 	}
@@ -22,6 +22,10 @@
 		width: 300px;
 		height: auto;
 	}
+	.links {
+
+		display: flex;
+	}
 	.cart_bttn {
 		border: 2px solid;
 		color: #797a7e;
@@ -29,6 +33,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		padding: 10px 20px;
+		margin: auto 20px;	
 	}
 	.ads {
 		width: 25%;
@@ -43,14 +48,17 @@
 				<div class="element">
 					<img src="{{this.image_url}}">
 					<div class="info">
-						<h1 class="name"> {{this.name}} by {{this.author}} </h1>
+						<h1 class="name"> {{this.name}}<br>{{this.author}} </h1>
 						<h3 class="price"> $ {{this.price}} </h3>
 						<p class="description"> {{this.desc}} </p>
-						<a href="#" class="cart_bttn">Add to a Cart</a>
+						<div class="links">
+							<a href="#" class="cart_bttn">Add to a Cart</a>
+							<a href="#" class="cart_bttn">Add to Favourites</a>
+						</div>
 					</div>
 					
 				</div>
 
-		<div class="ads"></div>
+		<!--<div class="ads"></div>-->
 	</div>
 </div>

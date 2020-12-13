@@ -52,14 +52,11 @@
 		<div class="products">
 
 			{{#each item}}
-			<a href="/secndLifeBooks/{{this.name}}" class="product">
-				<img src='{{this.image_url}}' class="product_img">
-				<span class="product_name"> {{this.name}} </span>
-				<span class="product_price"> $ {{this.price}} </span>
-				<img src="images/fav.png" class="fav_img"/>
-			</a>
-			
-
+				<a href="{{this.category}}/{{this.name}}" class="product">
+					<img src='{{this.image_url}}' class="product_img">
+					<span class="product_name"> {{this.name}} </span>
+					<span class="product_price"> $ {{this.price}} </span>
+				</a>		
 			{{/each }}
 					
 		</div>

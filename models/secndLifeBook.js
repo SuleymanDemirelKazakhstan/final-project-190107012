@@ -23,7 +23,11 @@ const bookSchema = mongoose.Schema({
 	price: {
 		type: Number,
 		required: true
-	}
+	},
+	category: {
+		type: String,
+		default: 'secndLifeBooks'
+	} 
 });
 
 module.exports = mongoose.model('secndLifeBook', bookSchema);

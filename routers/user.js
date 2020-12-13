@@ -28,6 +28,22 @@ router.get('/sign_in', (req, res) => {
 router.get('/create_acc', (req, res) => {
 	res.render('create_acc')
 })
+router.post('/create_acc', (req, res) => {
+	console.log(req.params)
+	console.log(req.query)
+	console.log(req.query.username)
+	console.log(req.query.emailOrPhone)
+	console.log(req.body)
+
+	res.json({
+		data: req.query.username,
+		info: req.body
+	})
+})
+
+// router.get('/cart', (req, res) => {
+// 	res.render('cart', )
+// })
 
 // router.get('/:name', (req, res) => {
 // 	res.render('element_page')

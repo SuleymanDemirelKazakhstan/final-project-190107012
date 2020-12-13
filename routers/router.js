@@ -8,9 +8,10 @@ const apparel = require('./apparel');
 const furniture = require('./furniture');
 const secndLifeBooks = require('./secndLifeBooks')
 const user = require('./user')
+const search = require('./search')
 
 router.use('/user', user)
-
+router.use('/search', search)
 router.use('/blog', blog);
 router.use('/books', books);
 router.use('/art', art);

@@ -187,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: 10px 20px;
+	max-width: ;
 	margin: auto 20px;
 
 	border: 2px solid #797a7e;
@@ -231,7 +232,9 @@ h1, h2, h3, h4, h5, h6 {
 		<header class="header">
 			<div class="header_in">		
 					<div class="header_logo">BookShop</div>
-					<input class="search" type="text" name="search" placeholder="Search...">
+					<form action="/search" method="post">
+						<input class="search" type="text" name="search" placeholder="Search...">
+					</form>
 				<nav class="nav">
 					<a class="nav_link" href="user/sign_in">Sign In or Create Account</a>
 					<!-- <a class="nav_link" href="#">Post an Ad</a> -->
@@ -306,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 		<footer class="footer">
 			<div class="footer_in">
 				<div class="footer_up">
-					<div class="footer_links">
+					<!-- <div class="footer_links">
 						<a class="footer_link" href="#">Privacy Policy</a>
 						<a class="footer_link" href="#">About Us</a>
 						<a class="footer_link" href="#">Contact Us</a>
@@ -315,8 +318,8 @@ h1, h2, h3, h4, h5, h6 {
 					</div>
 					<div class="footer_social">
 						Follow Us
-						<!-- tut icondar bolu kerek -->
-					</div>
+						 tut icondar bolu kerek 
+					</div> -->
 				</div>
 				<div class="footer_down">Copyright to ME. All rights reversed</div>
 			</div>

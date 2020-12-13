@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 	secndLifeBook.find()
 	.then(it => {
 		const item = {item: it}
-		console.log(item);
+		// console.log(item);
 		res.render('list_page', item)
 	});
 });
@@ -28,7 +28,7 @@ router.post('/post_ad', (req, res) => {
 	// var img = req.body.img;
 	// var price = req.body.price;
 
-	// secndLifeBook.create({name: name, author: author, desc: desc, img: img, price: price})
+	// secndLifeBook.create({name: name, author: author, desc: desc, price: price})
 	// .then(it => {
 	// 	console.log(it);
 	// })
@@ -38,7 +38,7 @@ router.post('/post_ad', (req, res) => {
 	console.log(req.body)
 	res.json({
 		conf: 'success',
-		data: req.body
+		data: req.body + ' ' + req.body.name
 	})
 })
 
@@ -51,7 +51,7 @@ router.get('/:name', (req, res) => {
 		// console.log(it);
 		// const item = {item: it}
 		// const item = {item: it}
-		console.log("BOOKNAME:"+name  + "IT: " + it);
+		// console.log("BOOKNAME:"+name  + "IT: " + it);
 		res.render('element_page', it)
 	})
 });

@@ -38,7 +38,8 @@ app.engine('handlebars', /*hbs.engine*/ exphbs({runtimeOptions: {
 app.set('view engine', 'handlebars');
 app.use(express.static('/images'));
 app.use(router.router);
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.json())
 app.use(bodyParser.json())
 app.use(express.static(__dirname+'/public'));
 
@@ -71,7 +72,7 @@ mongoose.connect(mongoURL, {useNewUrlParser: true, useUnifiedTopology: true}, (e
 		})
 	})
 
-	app.get('/updateImgSrc', (req, res) => {
+	app.get('/update', (req, res) => {
 		const query = req.query;
 		const bName = query.id;
 		delete query['id'];
@@ -110,8 +111,3 @@ mongoose.connect(mongoURL, {useNewUrlParser: true, useUnifiedTopology: true}, (e
 
 	app.listen(3000, () => console.log("LISTENING"));
 });
- 
-	// app.get('/books', (req, res) => {
-	// 	const item = {list_page: books_list};
-	// 	res.render('list_page', item);
-	// });

@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 	accessories.find()
 	.then(it => {
 		const item = {item: it}
-		console.log(item);
+		// console.log(item);
 		res.render('list_page', item)
 	});
 });
@@ -26,7 +26,7 @@ router.get('/:name', (req, res) => {
 		// console.log(it);
 		// const item = {item: it}
 		// const item = {item: it}
-		console.log(name  + "IT: " + it);
+		// console.log(name  + "IT: " + it);
 		res.render('element_page', it)
 	})
 });
