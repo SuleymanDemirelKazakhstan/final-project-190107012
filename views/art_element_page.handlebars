@@ -1,0 +1,61 @@
+<style>
+	.section_inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 25px;
+	}
+	.element {
+		display: flex;
+		/*align-items: center;*/
+		justify-content: center;
+		width: 70%;
+
+		padding: 20px 100px;
+	}
+	.info {
+		display: block;
+		/*flex-direction: column;*/
+
+		padding: 10px 50px;
+	}
+	img {
+		width: 300px;
+		height: auto;
+	}
+	.links {
+
+		display: flex;
+	}
+	.cart_bttn {
+		border: 2px solid;
+		color: #797a7e;
+		font-size: 14px;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px 20px;
+		margin: auto 20px;	
+	}
+	.ads {
+		width: 25%;
+		background-color: #f7f2e7; /*svetlyi*/
+		padding: 20px;
+	}
+</style>
+
+<div class="section">
+			<div class="section_inner">
+
+				<div class="element">
+					<img src="{{this.image_url}}">
+					<div class="info">
+						<h1 class="name"> {{this.name}}<br>{{this.author}} </h1>
+						
+						<p class="description"> {{this.desc}} </p>
+					
+					</div>
+					
+				</div>
+
+		<!--<div class="ads"></div>-->
+	</div>
+</div>

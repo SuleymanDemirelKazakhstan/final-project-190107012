@@ -23,7 +23,7 @@ const userSchema = mongoose.Schema({
 		type: [book, secndLifeBook, accessories, apparel, furniture]
 	},
 	cart: {
-		// type: apparel
+		// type: asspparel
 		type: [book, secndLifeBook, accessories, apparel, furniture]
 	}
 });
